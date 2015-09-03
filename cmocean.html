@@ -71,6 +71,14 @@ seasurface, freesurface, zeta, eta</dd>
 <code class="descclassname">cmocean.plots.</code><code class="descname">plot_gallery</code><span class="sig-paren">(</span><em>saveplot=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmocean.plots.plot_gallery" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make plot of colormaps and labels, like in the matplotlib
 gallery.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>saveplot=False</strong> &#8211; Whether to save the plot or not.</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="function">
@@ -110,6 +118,7 @@ gallery.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>cmap</strong> &#8211; Colormap instance.</li>
 <li><strong>dpi=100</strong> &#8211; dpi for saved image.</li>
+<li><strong>saveplot=False</strong> &#8211; Whether to save the plot or not.</li>
 </ul>
 </td>
 </tr>
@@ -136,7 +145,7 @@ sample MCH data with each colormap.</p>
 <li><strong>rgbin</strong> &#8211; An [mx3] array, where m is the number of input color triplets which
 are interpolated between to make the colormap that is returned. hex values
 can be input instead, as [mx1] in single quotes with a #.</li>
-<li><strong>N</strong> &#8211; The number of levels to be interpolated to.</li>
+<li><strong>N=10</strong> &#8211; The number of levels to be interpolated to.</li>
 </ul>
 </td>
 </tr>
@@ -154,8 +163,16 @@ and <a class="reference external" href="http://nbviewer.ipython.org/github/kwink
 
 <dl class="function">
 <dt id="cmocean.tools.print_colormaps">
-<code class="descclassname">cmocean.tools.</code><code class="descname">print_colormaps</code><span class="sig-paren">(</span><em>cmaps</em><span class="sig-paren">)</span><a class="headerlink" href="#cmocean.tools.print_colormaps" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">cmocean.tools.</code><code class="descname">print_colormaps</code><span class="sig-paren">(</span><em>cmaps</em>, <em>returnrgb=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmocean.tools.print_colormaps" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print colormaps in 256 RGB colors to text files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>returnrgb=False</strong> &#8211; Whether or not to return the rgb array. Only makes sense to do if print one colormaps&#8217; rgb.</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 </div>
