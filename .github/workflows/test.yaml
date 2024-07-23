@@ -33,7 +33,7 @@ jobs:
           create-args: >-
             python=${{ matrix.python-version }} pip
             --file requirements.txt
-            pytest
+            pytest codecov pytest-cov
             --channel conda-forge
 
       - name: Set up conda environment
