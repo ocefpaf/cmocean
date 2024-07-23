@@ -42,7 +42,6 @@ setup(
     },
     packages = ["cmocean"],
     ext_package='cmocean',
-    scripts = [],
     keywords = ['colormaps', 'oceanography', 'plotting', 'visualization'],
     setup_requires=['setuptools'],
     install_requires=['matplotlib', 'numpy', 'packaging'],
