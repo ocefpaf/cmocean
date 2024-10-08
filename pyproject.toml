@@ -3,7 +3,6 @@ build-backend = "setuptools.build_meta"
 requires = [
   "setuptools>=42",
   "setuptools_scm",
-  "wheel",
 ]
 
 [project]
@@ -17,11 +16,11 @@ maintainers = [
 requires-python = ">=3.8"
 classifiers = [
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
 ]
 dynamic = [
   "dependencies",
