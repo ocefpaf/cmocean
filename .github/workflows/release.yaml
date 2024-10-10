@@ -33,12 +33,12 @@ jobs:
           check-manifest --verbose
 
       - name: Test wheels
-        run: >
+        run: |
           cd dist
-          && python -m twine check *
-          && python -m pip install *.whl
-          && cp --recursive ../tests .
-          && python -m pytest -rxs tests
+          python -m twine check *
+          python -m pip install *.whl
+          cp --recursive ../tests .
+          python -m pytest -rxs tests
 
       - name: Publish to PyPI
         if: success() && github.event_name == 'release'
